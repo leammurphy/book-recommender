@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/book_logo-removebg.png" class="logo">
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <BookRecommendations />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BookRecommendations from './components/BookRecommendations.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BookRecommendations
   }
 }
 </script>
@@ -20,7 +22,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #212526;
+  margin-top: 15px;
+}
+html {
+  background: #ebe8de;
+  font-family: Nunito, serif;
+}
+.logo {
+  width: 300px;
+  height: 300px;
 }
 </style>
